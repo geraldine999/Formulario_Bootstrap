@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario con Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+</head>
+<body class="bg-light m-4">
+    <div class="container-fluid">
+    <form>
+        <div class="form-group">
+        <div class="row">
+            <div class="col-6">
+                <label for="Nombre" class="mb-2">Nombre de pila</label>
+                <input  class= "form-control mb-4" type="text" id="Nombre">
+            </div>
+            <div class="col-6">
+                <label for="Apellido" class="mb-2">Apellido</label>
+                <input class= "form-control mb-4" type="text" id="Apellido">
+            </div>
+        </div>
+        <label for="Nombre-de-usuario" class="mb-2">Nombre de usuario</label>
+        <div class="input-group ">
+            <div class="input-group-prepend">
+                <div class="input-group-text">@</div>
+            </div>
+            <input class= "form-control mb-4 " type="text" id="Nombre-de-usuarios" placeholder="Nombre de Usuario">
+        </div>
+        <label for="Correo-electronico" class="mb-2">Correo Electronico<span class="text-muted"> (opcional)</span></label>
+                <input class= "form-control mb-4" type="mail" id="Correo-electronico" placeholder="you@example.com">
+    
+                <label for="Direccion" class="mb-2">Habla a</label>
+                <input class= "form-control mb-4" type="text" id="Direccion" placeholder="1234 Main St">
+
+                <label for="Direccion2" class="mb-2">Direccion 2<span class="text-muted"> (opcional)</span></label>
+                <input class= "form-control mb-4" type="text" id="Direccion2" placeholder="Apartamento o suite">
+            <div class="row">
+                <div class="col-5">
+                    <label class="mb-2" for="Pais">Pais</label>
+                    <select class="custom-select form-control" id="Pais">
+                      <option selected>Escoger...</option>
+                      <option value="1">Argentina</option>
+                      <option value="2">Chile</option>
+                      <option value="3">Uruguay</option>
+                    </select>
+                </div>
+                <div class="col-4">
+                    <label class="mb-2" for="Estado">Estado</label>
+                    <select class="custom-select form-control" id="Estado">
+                      <option selected>Escoger...</option>
+                    </select>
+
+                </div>
+                <div class="col-3">
+                    <label for="codigo-postal" class="mb-2">Codigo Postal</label>
+                    <input type="text" class="form-control mb-4">
+
+                </div>
+            </div>
+            <hr class="mb-4">
+            <div class="col-12">
+            <input class="form-check-input" type="checkbox" id="check-1">
+    <label class="form-check-label" for="check-1">
+       La direccion de envio es la misma que mi direccion de facturacion
+    </label>
+</div>
+    <input class="form-check-input" type="checkbox" id="check-2">
+    <label class="form-check-label" for="check-2">
+       Guarde esta informacion para la proxima vez
+    </label>
+            
+            </div>
+    </form>
+</div>
+    
+</body>
+</html>
